@@ -265,11 +265,11 @@ const EXPERIENCE_DATA = [
 const PROJECTS_DATA = [
   {
     id: 1,
-    title: "OmniCart - E-Commerce Platform",
+    title: "NovaCart - E-Commerce Platform",
     category: "Full Stack",
     tagline: "High-speed shopping application featuring dynamic cart, price filters & checkout simulation.",
     image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80",
-    tech: ["React.js", "Tailwind CSS", "Redux Toolkit", "REST API"],
+    tech: ["React.js", "Bootstrap", "Redux Toolkit", "REST API"],
     liveUrl: "https://example.com/demo-ecom",
     githubUrl: "https://github.com",
     featured: true
