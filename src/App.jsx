@@ -270,8 +270,8 @@ const PROJECTS_DATA = [
     tagline: "High-speed shopping application featuring dynamic cart, price filters & checkout simulation.",
     image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80",
     tech: ["React.js", "Bootstrap", "Redux Toolkit", "REST API"],
-    liveUrl: "https://example.com/demo-ecom",
-    githubUrl: "https://github.com",
+    liveUrl: "https://e-commerce-nu-blond-14.vercel.app/",
+    githubUrl: "https://github.com/amitsinghinfo0304-svg/E-commerce",
     featured: true
   },
   {
