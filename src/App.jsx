@@ -171,7 +171,30 @@ const PROFILE_DATA = {
     { label: "Completed Projects", value: "15+", sub: "Web & Mobile UIs" },
     { label: "Git Commits", value: "350+", sub: "Consistent coding" },
     { label: "Client Rating", value: "4.9 / 5", sub: "Fast & Reliable" }
-  ]
+  ],
+  education: [
+  {
+    degree: "Bsc Computer Science",
+    institution: "Mumbai University ",
+    year: "2022 - 2025",
+    score: "6.5 CGPA",
+    description: "Core coursework in Data Structures, Algorithms, Web Technologies, and Database Systems."
+  },
+  {
+    degree: "Senior Secondary (12th)",
+    institution: "Lord's Universal College",
+    year: "2018 - 2020",
+    score: "59%",
+    description: "Specialized in Physics, Chemistry, Bio, and Mathematics (PCMB)."
+  },
+  {
+    degree: "Secondary School (10th)",
+    institution: "Sunflower Secondary School",
+    year: "2018",
+    score: "80%",
+    description: "Completed secondary education with distinction in Science and Mathematics."
+  }
+]
 };
 
 const SKILLS_DATA = [
@@ -696,6 +719,39 @@ export default function App() {
             ))}
           </div>
         </section>
+        <section id="education" className="scroll-mt-24 space-y-10">
+  <div className="text-center max-w-2xl mx-auto space-y-2">
+    <span className="text-xs font-bold tracking-widest uppercase text-cyan-400">Academic Background</span>
+    <h2 className="text-3xl font-bold text-white">Education & Qualifications</h2>
+    <p className="text-slate-400 text-sm">
+      My academic journey and continuous learning foundation in Computer Science and Technology.
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+    {PROFILE_DATA.education.map((item, i) => (
+      <div 
+        key={i} 
+        className="bg-slate-900/70 border border-slate-800 rounded-2xl p-5 hover:border-slate-700 transition-all hover:-translate-y-1 group flex flex-col justify-between"
+      >
+        <div>
+          <span className="text-xs font-mono text-cyan-400/90 bg-cyan-950/40 border border-cyan-800/40 px-2.5 py-1 rounded-full">
+            {item.year}
+          </span>
+          <h3 className="text-lg font-bold text-slate-100 group-hover:text-cyan-300 transition-colors mt-3">
+            {item.degree}
+          </h3>
+          <p className="text-sm font-medium text-slate-300 mt-1">{item.institution}</p>
+          <p className="text-xs text-slate-400 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+
+        <div className="text-xs font-semibold text-slate-500 mt-4 pt-3 border-t border-slate-800/60">
+          Score: <span className="text-slate-300">{item.score}</span>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
 
         <section id="skills" className="scroll-mt-24 space-y-8">
           <div className="text-center max-w-2xl mx-auto space-y-2">
